@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contaner{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw; 
+    background: url(time-1892012_1920.png) no-repeat;
+    background-size: 100%;
+}
+.contaner::before{
+content: "";
+position: absolute;
+top: 48.4%;
+left: 48%;
+width: 22px;
+height: 23px;
+border-radius: 25px;
+background: #000;
+z-index: 67;
+}
+#hours,#minute,#second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+    border: solid;
+}
+#hours{
+    width: 2%;
+    height: 19%;
+    top: 30%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+#minute{
+    width: 1.6%;
+    height: 25%;
+    top: 24%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 36%;
+    top: 13%;
+    left: 49.25%;
+    opacity: 0.8; 
+    background: red;   
+}
